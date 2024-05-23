@@ -1,0 +1,275 @@
+/*configurações importantes*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+img {
+  border-radius: 100%;
+  max-width: 200px;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+p, h1, h2, h3, h4, li {
+  color: #fff;
+}
+
+/*tamanho das fonts*/
+.perfil > p, .geral, .resumo{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.central, .central_2 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.linguagens, .Mysql, h3, .skills {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.geral, .central, .linguagens, .banco, h3{
+  text-align: center;
+}
+
+/*header*/
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 25%;
+}
+
+.menu{
+  width: 50%;
+}
+
+.menu nav a{
+  color: #fff;
+  text-decoration: none;
+  padding-right: 30px;
+  font-size: 18px;
+  position: relative;
+}
+
+.menu nav a::after{
+  content: " ";
+  width: 0px;
+  height: 4px;
+  background-image: linear-gradient(45deg, #8d8181, #fff);
+  position: absolute;
+  top: 30px;
+  left: 0;
+  transition: width 0.5s;
+}
+
+.menu nav a:hover::after{
+  width: 60px;
+}
+
+header {
+  width: 100%;
+}
+
+.linha_horizontal{
+  width: auto;
+  height: 1px;
+  background-color: #fff;
+}
+/*fecha header*/
+
+/*main1*/
+body {
+  background-image: linear-gradient(to top,#64908F 0%, #13A54D 82%, #1C2A35 100%);
+}
+
+.main_1 {
+  display: flex;
+  align-items: center;
+  padding: 6%;
+}
+
+.perfil { 
+  padding: 20px 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfil > img {
+  border-radius: 200px;
+}
+
+/*main2*/
+.geral {
+  padding: 40px 20%;
+  display: flex;
+  gap: 60px;
+}
+
+.info_1 {
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info_2 {
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/*geral*/
+
+/*main3*/
+.grupo, .centralizar_2, .container_2 {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 1200px;
+  height: 150px;
+  border-radius: 40px;
+  box-shadow: 6px 6px 30px #555050;
+}
+
+.resumo {
+  position: relative;
+  padding: 2%;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;   
+}
+
+/*main4*/
+.central, .central_2 {
+  max-width: 1920px;
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.centralizar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grupo_2{
+  width: 800px;
+  height: 260px;
+}
+
+.linguagens {
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+
+.linguagens > .Js{
+  padding: 5%;
+}
+
+.grupo_3 {
+  width: 300px;
+  height: 260px;
+}
+
+.grupo_3 > .banco {
+  padding: 5%;
+}
+
+/*Para o framewok*/
+.grupo_4 {
+  padding: 40px 4%;
+}
+
+.frameworks {
+  display: flex;
+  gap: 100px;
+}
+
+.text {
+  box-shadow: 6px 6px 30px #605f5f;
+  width: 270px;
+  height: 250px;
+  padding: 30px;
+  margin-top: 25px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.text > h4 {
+  font-size: 25px;
+  font-style: normal;
+}
+
+.text > p {
+  font-size: 20px;
+  text-align: left;
+  padding: 10px 2%;
+}
+
+/*main5*/
+.grupo_5 {
+  width: 400px;
+  height: 160px;
+  
+}
+
+.linhas {
+  width: 400px;
+  height: 160px;
+  padding: 10px;
+  display: grid;
+  gap: 20px;
+}
+
+.horizontal {
+  width: 250px;
+  height: 13px;
+  background-color: #fff;
+}
+
+.centralizar_3 {
+  padding: 80px;
+}
+
+.contato {
+  font-size: 20px;
+  font-style: normal;
+}
+
+.redes {
+  padding: 40px 4%;
+  display: flex;
+  gap: 60px;
+}
+
+.redes li a{
+  color: #fff;
+}
+
+footer {
+  padding: 40px 4%;
+}
